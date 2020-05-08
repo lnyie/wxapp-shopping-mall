@@ -1,0 +1,24 @@
+<template name="34b94d90">
+  <view class="_div data-v-1c134a1a order">
+    <view class="_div data-v-1c134a1a topTab">
+      <van-tabs active="{{activeIdx}}" bindchange="handleProxy" color="#25d2fe" class="_van-tabs data-v-1c134a1a mytab" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <van-tab title="全部" class="_van-tab data-v-1c134a1a"></van-tab>
+        <van-tab title="待付款" class="_van-tab data-v-1c134a1a"></van-tab>
+        <van-tab title="已付款" class="_van-tab data-v-1c134a1a"></van-tab>
+        <van-tab title="退款/退货" class="_van-tab data-v-1c134a1a"></van-tab>
+      </van-tabs>
+    </view>
+    <view class="_div data-v-1c134a1a orderList">
+      <view class="_div data-v-1c134a1a singleOrder" wx:key="index" key="{{index}}" wx:for="{{orderList}}" wx:for-index="index" wx:for-item="order">
+        <van-card wx:key="goodsIdx" key="{{goodsIdx}}" num="{{goods.number}}" price="{{goods.amountSingle}}" title="{{goods.goodsName}}" thumb="{{goods.pic}}" wx:for="{{goodsMap[order.id]}}" wx:for-index="goodsIdx" wx:for-item="goods" class="_van-card data-v-1c134a1a"></van-card>
+        <view class="_div data-v-1c134a1a totalPrice"> 共{{ order.goodsNumber }}件商品 总计：¥{{ order.amount }} (含运费0.00) </view>
+        <view class="_div data-v-1c134a1a orderInfo">
+          <view class="_div data-v-1c134a1a orderNum"> 订单号：{{ order.orderNumber }}
+          </view>
+          <van-button color="#25d2fe" plain size="mini" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" class="_van-button data-v-1c134a1a">支付</van-button>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-1c134a1a noOrder" wx:if="{{orderList.length === 0}}"> 暂无订单信息 </view>
+  </view>
+</template>

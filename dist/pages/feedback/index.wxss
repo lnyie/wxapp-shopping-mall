@@ -1,0 +1,11 @@
+@import "../../common/vendor.wxss";
+
+.feedback.data-v-17721ce2 {
+  padding: 20rpx;
+}
+.feedback #fullArea.data-v-17721ce2 {
+  width: 100%;
+  border: 8rpx solid #f5f5f5;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}

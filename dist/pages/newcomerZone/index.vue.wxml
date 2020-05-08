@@ -1,0 +1,23 @@
+<template name="a767d518">
+  <view class="_div data-v-6353ed64 newcomerZone">
+    <view class="_div data-v-6353ed64 topImg">
+      <image src="/static/img/newcomerZone.png" wx:if="{{navName === '新人专区'}}" class="_img data-v-6353ed64"></image>
+      <image src="/static/img/xiarixinpin.png" wx:elif="{{navName === '夏日新品'}}" class="_img data-v-6353ed64"></image>
+      <image src="/static/img/tejiazhuanqu.jpg" wx:elif="{{navName === '特价专区'}}" class="_img data-v-6353ed64"></image>
+      <image src="/static/img/huiyuanzhuanqu.jpg" wx:elif="{{navName === '会员专区'}}" class="_img data-v-6353ed64"></image>
+    </view>
+    <view class="_div data-v-6353ed64 container">
+      <view class="_div data-v-6353ed64 recommended-goods-content">
+        <navigator wx:key="item.id" key="{{item.id}}" url="{{'/pages/detail/index?id=' + item.id}}" class="_a data-v-6353ed64 goodsbox" wx:for="{{recommendedGoodsList}}" wx:for-index="index" wx:for-item="item">
+          <image lazy-load src="{{item.pic}}" class="_image data-v-6353ed64 goodsImg"></image>
+          <view class="_div data-v-6353ed64 goodsinfo">
+            <view class="_p data-v-6353ed64">{{ item.name }}</view>
+            <view class="_i data-v-6353ed64 dis_price">¥{{ item.minPrice }}</view>
+            <view class="_i data-v-6353ed64 old_price">¥{{ item.originalPrice }}</view>
+            <view class="_i data-v-6353ed64 salecount">销量{{ item.numberSells }}件</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</template>

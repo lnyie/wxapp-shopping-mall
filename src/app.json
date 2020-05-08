@@ -1,0 +1,157 @@
+{
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "config": {
+
+      }
+    },
+    {
+      "path": "pages/category/index",
+      "config": {
+        "navigationBarTitleText": "分类"
+      }
+    },
+    {
+      "path": "pages/car/index",
+      "config": {
+        "navigationBarTitleText": "购物车"
+      }
+    },
+    {
+      "path": "pages/personal/index",
+      "config": {
+        "navigationBarTitleText": "个人中心",
+        "navigationBarBackgroundColor": "#25d2fe"
+      }
+    },
+    {
+      "path": "pages/search/index",
+      "config": {
+        "navigationBarTitleText": "搜索"
+      }
+    },
+    {
+      "path": "pages/searchList/index",
+      "config": {
+        "navigationBarTitleText": "搜索"
+      }
+    },
+    {
+      "path": "pages/detail/index",
+      "config": {
+        "navigationBarTitleText": "商品详情"
+      }
+    },
+    {
+      "path": "pages/order/index",
+      "config": {
+        "navigationBarTitleText": "订单"
+      }
+    },
+    {
+      "path": "pages/newcomerZone/index",
+      "config": {
+        "navigationBarTitleText": "新人专区"
+      }
+    },
+    {
+      "path": "pages/favGoods/index",
+      "config": {
+        "navigationBarTitleText": "收藏的商品"
+      }
+    },
+    {
+      "path": "pages/addressManagement/index",
+      "config": {
+        "navigationBarTitleText": "收货地址管理"
+      }
+    },
+    {
+      "path": "pages/addressManagement/add",
+      "config": {
+        "navigationBarTitleText": "收货地址管理"
+      }
+    },
+    {
+      "path": "pages/aboutus/index",
+      "config": {
+        "navigationBarTitleText": "关于我们"
+      }
+    },
+    {
+      "path": "pages/feedback/index",
+      "config": {
+        "navigationBarTitleText": "反馈"
+      }
+    },
+    {
+      "path": "pages/index",
+      "config": {
+        "navigationBarTitleText": "wxapp-shopping-mall"
+      }
+    },
+    "pages/counter",
+    {
+      "path": "packageA/logs",
+      "subPackage": true
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "清凉夏日商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#25d2fe",
+    "color": "#333",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/icon/icon_home.png",
+        "selectedIconPath": "static/icon/icon_home_active.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "static/icon/icon_category.png",
+        "selectedIconPath": "static/icon/icon_category_active.png"
+      },
+      {
+        "pagePath": "pages/car/index",
+        "text": "购物车",
+        "iconPath": "static/icon/icon_car.png",
+        "selectedIconPath": "static/icon/icon_car_active.png"
+      },
+      {
+        "pagePath": "pages/personal/index",
+        "text": "我",
+        "iconPath": "static/icon/icon_personal.png",
+        "selectedIconPath": "static/icon/icon_personal_active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-tag": "/@vant/weapp/dist/tag/index",
+    "van-search": "/@vant/weapp/dist/search/index",
+    "van-button": "/@vant/weapp/dist/button/index",
+    "van-popup": "/@vant/weapp/dist/popup/index",
+    "van-toast": "/@vant/weapp/dist/toast/index",
+    "van-goods-action": "/@vant/weapp/dist/goods-action/index",
+    "van-goods-action-icon": "/@vant/weapp/dist/goods-action-icon/index",
+    "van-goods-action-button": "/@vant/weapp/dist/goods-action-button/index",
+    "van-sidebar": "/@vant/weapp/dist/sidebar/index",
+    "van-sidebar-item": "/@vant/weapp/dist/sidebar-item/index",
+    "van-card": "/@vant/weapp/dist/card/index",
+    "van-submit-bar": "/@vant/weapp/dist/submit-bar/index",
+    "van-checkbox": "/@vant/weapp/dist/checkbox/index",
+    "van-stepper": "/@vant/weapp/dist/stepper/index",
+    "van-tab": "/@vant/weapp/dist/tab/index",
+    "van-tabs": "/@vant/weapp/dist/tabs/index",
+    "van-field": "/@vant/weapp/dist/field/index",
+    "van-area": "/@vant/weapp/dist/area/index",
+    "van-panel": "/@vant/weapp/dist/panel/index"
+  }
+}

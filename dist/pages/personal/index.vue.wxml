@@ -1,0 +1,65 @@
+<import src="/pages/login/index.vue.wxml" /><template name="509285cc">
+  <view class="_div data-v-74a93e8a personal">
+    <view class="_div data-v-74a93e8a avatar">
+      <view class="_div data-v-74a93e8a avatarArea" wx:if="{{hasUserInfo}}">
+        <image src="{{userInfo.avatarUrl}}" class="_img data-v-74a93e8a"></image>
+        <view class="_p data-v-74a93e8a">{{ userInfo.nickName }}</view>
+      </view>
+      <view class="_div data-v-74a93e8a avatarArea" wx:else bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <image src="https://dcdn.it120.cc/2020/04/27/a10886d6-d6d0-439b-83c8-fcb879af11ca.png" class="_img data-v-74a93e8a"></image>
+        <view class="_p data-v-74a93e8a">请登录</view>
+      </view>
+    </view>
+    <view class="_div data-v-74a93e8a content-area">
+      <view class="_div data-v-74a93e8a fav-floor">
+        <view bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_div data-v-74a93e8a">
+          <view class="_p data-v-74a93e8a">0</view>
+          <view class="_p data-v-74a93e8a">收藏的店铺</view>
+        </view>
+        <view bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_div data-v-74a93e8a">
+          <view class="_p data-v-74a93e8a">0</view>
+          <view class="_p data-v-74a93e8a">收藏的商品</view>
+        </view>
+        <view bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_div data-v-74a93e8a">
+          <view class="_p data-v-74a93e8a">0</view>
+          <view class="_p data-v-74a93e8a">关注的商品</view>
+        </view>
+        <view bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_div data-v-74a93e8a">
+          <view class="_p data-v-74a93e8a">0</view>
+          <view class="_p data-v-74a93e8a">我的足迹</view>
+        </view>
+      </view>
+      <view class="_div data-v-74a93e8a my-orders">
+        <view class="_div data-v-74a93e8a my-orders__title"> 我的订单 </view>
+        <view class="_div data-v-74a93e8a my-orders__action">
+          <view bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_div data-v-74a93e8a">
+            <view class="_i data-v-74a93e8a iconfont icon-daifukuan"></view>
+            <view class="_p data-v-74a93e8a">待付款</view>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_div data-v-74a93e8a">
+            <view class="_i data-v-74a93e8a iconfont icon-daishouhuo"></view>
+            <view class="_p data-v-74a93e8a">待收货</view>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_div data-v-74a93e8a">
+            <view class="_i data-v-74a93e8a iconfont icon-refund"></view>
+            <view class="_p data-v-74a93e8a">退款/退货</view>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" class="_div data-v-74a93e8a">
+            <view class="_i data-v-74a93e8a iconfont icon-dingdan"></view>
+            <view class="_p data-v-74a93e8a">全部订单</view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-74a93e8a address" bindtap="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}"><label class="_span data-v-74a93e8a">收货地址管理</label>
+        <view class="_i data-v-74a93e8a iconfont icon-iconfontjiantou6"></view>
+      </view>
+      <view class="_div data-v-74a93e8a after-sale-service">
+        <view class="_div data-v-74a93e8a contact" bindtap="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}"><label class="_span data-v-74a93e8a">联系客服</label>
+          <view class="_i data-v-74a93e8a">15523322110</view>
+        </view>
+        <view class="_div data-v-74a93e8a feedback" bindtap="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}"><label class="_span data-v-74a93e8a">意见反馈</label></view>
+        <view class="_div data-v-74a93e8a aboutus" bindtap="handleProxy" data-eventid="{{'12'}}" data-comkey="{{$k}}"><label class="_span data-v-74a93e8a">关于我们</label></view>
+      </view>
+    </view> <template wx:if="{{showLogin}}" bindhideLogin="handleProxy" bindloginSuccess="handleProxy" data-eventid="{{'13'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="184a8feb"></template>
+  </view>
+</template>

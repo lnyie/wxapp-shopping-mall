@@ -1,0 +1,10 @@
+<template name="5d7e1f4e">
+  <view class="_div data-v-86894d3a addressManagement">
+    <van-panel class="_van-panel data-v-86894d3a addressBox" wx:key="index" key="{{index}}" title="{{'收货人：'+item.nickName}}" desc="{{'联系电话：'+item.phoneNum}}" wx:for="{{addressArr}}" wx:for-index="index" wx:for-item="item">
+      <view class="_view data-v-86894d3a address">收货地址：{{ item.province + item.city + item.county + item.detailAddress }}</view>
+    </van-panel>
+    <view class="_div data-v-86894d3a bottomArea">
+      <van-button block type="primary" size="small" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-button data-v-86894d3a">新增地址</van-button>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,69 @@
+<import src="/pages/login/index.vue.wxml" /><template name="03821e2a">
+  <view class="_div data-v-3d6f0f1b detail">
+    <view class="_div data-v-3d6f0f1b">
+      <swiper class="_swiper data-v-3d6f0f1b swiperBox" indicator-dots autoplay circular>
+        <block wx:key="key" key="{{key}}" wx:for="{{goodsInfo.extJson}}" wx:for-index="key" wx:for-item="val">
+          <swiper-item class="_swiper-item data-v-3d6f0f1b imgbox">
+            <image src="{{val}}" class="_img data-v-3d6f0f1b"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="_div data-v-3d6f0f1b goodsDetail">
+      <view class="_div data-v-3d6f0f1b price"> ¥ {{ goodsPrice }}
+      </view>
+      <view class="_div data-v-3d6f0f1b title">
+        <view class="_div data-v-3d6f0f1b left">
+          {{ title }}
+        </view>
+        <view class="_div data-v-3d6f0f1b right" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+          <view class="_i data-v-3d6f0f1b iconfont icon-icon-"></view> 收藏
+        </view>
+      </view>
+      <view class="_div data-v-3d6f0f1b express"> 快递：免运费 </view>
+    </view>
+    <view class="_div data-v-3d6f0f1b comment floor">
+      <view class="_div data-v-3d6f0f1b floor-title">
+        <view class="_i data-v-3d6f0f1b title">商品评价</view>
+      </view>
+      <view class="_div data-v-3d6f0f1b noComment">
+        <view class="_i data-v-3d6f0f1b iconfont icon-pinglun"></view> <label class="_span data-v-3d6f0f1b">暂无评论</label>
+      </view>
+    </view>
+    <view class="_div data-v-3d6f0f1b goodsDetailImg floor">
+      <view class="_div data-v-3d6f0f1b floor-title">
+        <view class="_i data-v-3d6f0f1b title">商品详情</view>
+      </view>
+      <view wx:key="index" key="{{index}}" class="_div data-v-3d6f0f1b picsBox" wx:for="{{pics}}" wx:for-index="index" wx:for-item="item">
+        <image src="{{item.pic}}" class="_img data-v-3d6f0f1b"></image>
+      </view>
+    </view>
+    <view class="_div data-v-3d6f0f1b guessulike floor">
+      <view class="_div data-v-3d6f0f1b floor-title">
+        <view class="_i data-v-3d6f0f1b title">猜你喜欢</view>
+      </view>
+      <view class="_div data-v-3d6f0f1b recommended-goods-content">
+        <navigator wx:key="item.id" key="{{item.id}}" url="{{'/pages/detail/index?id=' + item.id}}" class="_a data-v-3d6f0f1b goodsbox clearfix" wx:for="{{recommendedGoodsList}}" wx:for-index="index" wx:for-item="item">
+          <image lazy-load src="{{item.pic}}" class="_image data-v-3d6f0f1b goodsImg"></image>
+          <view class="_div data-v-3d6f0f1b goodsinfo">
+            <view class="_p data-v-3d6f0f1b">{{ item.name }}</view>
+            <view class="_i data-v-3d6f0f1b dis_price">¥{{ item.minPrice }}</view>
+            <view class="_i data-v-3d6f0f1b old_price">¥{{ item.originalPrice }}</view>
+            <view class="_i data-v-3d6f0f1b salecount">销量{{ item.numberSells }}件</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="_div data-v-3d6f0f1b myunderline"> ===== 我是有底线的 ===== </view>
+    <view class="_div data-v-3d6f0f1b bottomArea">
+      <van-goods-action class="_van-goods-action data-v-3d6f0f1b"><button open-type="share" class="_button data-v-3d6f0f1b shareBtn">
+          <van-goods-action-icon icon="chat-o" text="转发" class="_van-goods-action-icon data-v-3d6f0f1b"></van-goods-action-icon>
+        </button>
+        <van-goods-action-icon icon="cart-o" text="购物车" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_van-goods-action-icon data-v-3d6f0f1b"></van-goods-action-icon>
+        <van-goods-action-button text="加入购物车" type="warning" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_van-goods-action-button data-v-3d6f0f1b"></van-goods-action-button>
+        <van-goods-action-button text="立即购买" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_van-goods-action-button data-v-3d6f0f1b"></van-goods-action-button>
+      </van-goods-action>
+    </view> <template wx:if="{{showLogin}}" bindhideLogin="handleProxy" bindloginSuccess="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'6'], $root}}" is="184a8feb"></template>
+    <van-toast id="van-toast" class="_van-toast data-v-3d6f0f1b"></van-toast>
+  </view>
+</template>

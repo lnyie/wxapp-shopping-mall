@@ -1,0 +1,16 @@
+<template name="184a8feb">
+  <view class="_div data-v-00b6e716 login">
+    <van-popup custom-style="width: 70%;border-radius: 5rpx" show="{{true}}" close-on-click-overlay="false" class="_van-popup data-v-00b6e716">
+      <view class="_div data-v-00b6e716 content">
+        <image class="_img data-v-00b6e716 avatar" src="https://dcdn.it120.cc/2020/04/27/a10886d6-d6d0-439b-83c8-fcb879af11ca.png" alt></image>
+        <view class="_i data-v-00b6e716 title">授权登录</view>
+        <view class="_hr data-v-00b6e716"></view>
+        <view class="_p data-v-00b6e716">・请授权小程序登录</view>
+        <view class="_p data-v-00b6e716">・我们不会公布您的信息</view>
+        <view class="_p data-v-00b6e716">・只是为了给您提供更好的服务</view> <button type="primary" class="_button data-v-00b6e716 allowBtn" open-type="getUserInfo" bindgetuserinfo="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">允许</button> <button type="default" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-00b6e716">暂不登录</button>
+      </view>
+    </van-popup>
+    <van-toast id="van-toast" class="_van-toast data-v-00b6e716"></van-toast>
+    <view class="_view data-v-00b6e716 icon van-icon van-icon van-icon-upgrade van-icon-upgrade" style="font-size: 32rpx;"></view>
+  </view>
+</template>

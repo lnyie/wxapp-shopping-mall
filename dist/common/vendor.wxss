@@ -1,0 +1,38 @@
+
+.login.data-v-00b6e716 {
+  position: relative;
+  z-index: 1000;
+}
+.content.data-v-00b6e716 {
+  text-align: center;
+  padding: 50rpx;
+  color: #ccc;
+}
+.content .avatar.data-v-00b6e716 {
+  width: 80rpx;
+  height: 80rpx;
+}
+.content .title.data-v-00b6e716 {
+  font-size: 28rpx;
+  color: #000;
+}
+.content ._hr.data-v-00b6e716 {
+  height: 2rpx;
+  background-color: #ededed;
+  margin: 10rpx 0 20rpx 0;
+}
+.content ._p.data-v-00b6e716 {
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+}
+.content ._button.data-v-00b6e716 {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+.content .allowBtn.data-v-00b6e716 {
+  margin: 30rpx 0 15rpx 0;
+}
+.card {
+  padding: 20rpx;
+}

@@ -1,0 +1,33 @@
+@import "../../common/vendor.wxss";
+
+.his.data-v-067bdbb2,
+.hot.data-v-067bdbb2 {
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.his .title.data-v-067bdbb2,
+.hot .title.data-v-067bdbb2 {
+  display: flex;
+  justify-content: space-between;
+  line-height: 88rpx;
+  height: 88rpx;
+  font-size: 40rpx;
+}
+.his .title icon.data-v-067bdbb2,
+.hot .title icon.data-v-067bdbb2 {
+  margin-top: 15rpx;
+}
+.his .list.data-v-067bdbb2,
+.hot .list.data-v-067bdbb2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.his .list .item.data-v-067bdbb2,
+.hot .list .item.data-v-067bdbb2 {
+  padding: 20rpx 25rpx;
+  background-color: #f7f8fa;
+  margin-right: 30rpx;
+  margin-bottom: 18rpx;
+  font-size: 32rpx;
+}

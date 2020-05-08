@@ -1,0 +1,36 @@
+<import src="/pages/login/index.vue.wxml" /><template name="1d8cd396">
+  <view class="_div data-v-411c6b60 shopcar">
+    <view class="_div data-v-411c6b60 address">
+      <view bindtap="handleProxy" wx:if="{{!address.userName}}" class="_div data-v-411c6b60 no-add" data-eventid="{{'1'}}" data-comkey="{{$k}}"><label class="_span data-v-411c6b60">没有地址</label>
+        <view class="_i data-v-411c6b60 iconfont icon-iconfontjiantou6"></view>
+      </view>
+      <view bindtap="handleProxy" wx:else class="_div data-v-411c6b60 has-add" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-411c6b60 msg"><label class="_span data-v-411c6b60">收货人： {{ address.userName }}</label> <label class="_span data-v-411c6b60">{{ address.telNumber }}</label>
+          <view class="_i data-v-411c6b60 iconfont icon-iconfontjiantou6"></view>
+        </view>
+        <view class="_div data-v-411c6b60 addmsg">
+          {{ detailAddress }}
+        </view>
+      </view>
+      <image src="/static/img/tiaowen.png" class="_img data-v-411c6b60"></image>
+    </view>
+    <view class="_div data-v-411c6b60 goodsList">
+      <view class="_div data-v-411c6b60 item" wx:key="key" key="{{key}}" wx:for="{{carList}}" wx:for-index="key" wx:for-item="val">
+        <van-checkbox class="_van-checkbox data-v-411c6b60 singleCheck" value="{{val.checkStatus}}" bindchange="handleProxy" data-eventid="{{'2_'+key}}" data-comkey="{{$k}}"></van-checkbox>
+        <van-card price="{{val.minPrice}}" title="{{val.name}}" thumb="{{val.pic}}" class="_van-card data-v-411c6b60">
+          <view slot="num" class="_view data-v-411c6b60 numStepper">
+            <view class="_div data-v-411c6b60 count"><label bindtap="handleProxy" data-eventid="{{'3_'+key}}" data-comkey="{{$k}}" class="_span data-v-411c6b60">-</label> <input type="text" value="{{val.carNum}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'4_'+key}}" data-comkey="{{$k}}" class="_input data-v-411c6b60" /> <label bindtap="handleProxy" data-eventid="{{'5_'+key}}" data-comkey="{{$k}}" class="_span data-v-411c6b60">+</label></view>
+          </view>
+        </van-card>
+      </view>
+    </view>
+    <view class="_div data-v-411c6b60 nogoodsList" wx:if="{{carListKey.length === 0}}">
+      <image src="/static/img/kong.png" class="_img data-v-411c6b60"></image>
+      <view class="_p data-v-411c6b60">空空如也</view>
+    </view>
+    <van-submit-bar class="_van-submit-bar data-v-411c6b60 submitBar" price="{{totalPrice}}" button-text="结算" bindsubmit="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}">
+      <van-checkbox value="{{isAll}}" bindchange="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_van-checkbox data-v-411c6b60"></van-checkbox>
+    </van-submit-bar> <template wx:if="{{showLogin}}" bindhideLogin="handleProxy" bindloginSuccess="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'4'], $root}}" is="184a8feb"></template>
+    <van-toast id="van-toast" class="_van-toast data-v-411c6b60"></van-toast>
+  </view>
+</template>

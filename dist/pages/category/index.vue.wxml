@@ -1,0 +1,44 @@
+<template name="64c87e58">
+  <view class="_div data-v-01baffc8 category">
+    <van-search input-align="center" placeholder="请输入搜索关键词" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-search data-v-01baffc8"></van-search>
+    <view class="_div data-v-01baffc8 category_container">
+      <van-sidebar active-key="{{activeKey}}" bindchange="handleProxy" class="_van-sidebar data-v-01baffc8 left" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <van-sidebar-item title="裙子" class="_van-sidebar-item data-v-01baffc8"></van-sidebar-item>
+        <van-sidebar-item title="衣服" class="_van-sidebar-item data-v-01baffc8"></van-sidebar-item>
+        <van-sidebar-item title="裤子" class="_van-sidebar-item data-v-01baffc8"></van-sidebar-item>
+      </van-sidebar>
+      <view class="_div data-v-01baffc8 right">
+        <view wx:if="{{activeKey === 0}}" class="_div data-v-01baffc8 content">
+          <view bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_div data-v-01baffc8">
+            <view class="_i data-v-01baffc8 iconfont icon-tubiaozhizuomoban- lianyiqun"></view> <label class="_span data-v-01baffc8">连衣裙</label>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_div data-v-01baffc8">
+            <view class="_i data-v-01baffc8 iconfont icon-changqundiaodai diaodai"></view> <label class="_span data-v-01baffc8">长裙吊带</label>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_div data-v-01baffc8">
+            <view class="_i data-v-01baffc8 iconfont icon-duanqun duanqun"></view> <label class="_span data-v-01baffc8">短裙</label>
+          </view>
+        </view>
+        <view wx:if="{{activeKey === 1}}" class="_div data-v-01baffc8 content">
+          <view bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_div data-v-01baffc8">
+            <view class="_i data-v-01baffc8 iconfont icon-icon-1 duanxiu"></view> <label class="_span data-v-01baffc8">T恤</label>
+          </view>
+        </view>
+        <view wx:if="{{activeKey === 2}}" class="_div data-v-01baffc8 content">
+          <view bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_div data-v-01baffc8">
+            <view class="_i data-v-01baffc8 iconfont icon-icon-test niuzaiku"></view> <label class="_span data-v-01baffc8">牛仔裤</label>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_div data-v-01baffc8">
+            <view class="_i data-v-01baffc8 iconfont icon-duanku- duanku"></view> <label class="_span data-v-01baffc8">短裤</label>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" class="_div data-v-01baffc8">
+            <view class="_i data-v-01baffc8 iconfont icon-kuotuiku kuotuiku"></view> <label class="_span data-v-01baffc8">阔腿裤</label>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}" class="_div data-v-01baffc8">
+            <view class="_i data-v-01baffc8 iconfont icon-huabankaobei yundongku"></view> <label class="_span data-v-01baffc8">运动裤</label>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

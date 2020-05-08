@@ -1,0 +1,87 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/category/index",
+    "pages/car/index",
+    "pages/personal/index",
+    "pages/search/index",
+    "pages/searchList/index",
+    "pages/detail/index",
+    "pages/order/index",
+    "pages/newcomerZone/index",
+    "pages/favGoods/index",
+    "pages/addressManagement/index",
+    "pages/addressManagement/add",
+    "pages/aboutus/index",
+    "pages/feedback/index",
+    "pages/index",
+    "pages/counter"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "清凉夏日商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#25d2fe",
+    "color": "#333",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/icon/icon_home.png",
+        "selectedIconPath": "static/icon/icon_home_active.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "static/icon/icon_category.png",
+        "selectedIconPath": "static/icon/icon_category_active.png"
+      },
+      {
+        "pagePath": "pages/car/index",
+        "text": "购物车",
+        "iconPath": "static/icon/icon_car.png",
+        "selectedIconPath": "static/icon/icon_car_active.png"
+      },
+      {
+        "pagePath": "pages/personal/index",
+        "text": "我",
+        "iconPath": "static/icon/icon_personal.png",
+        "selectedIconPath": "static/icon/icon_personal_active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-tag": "/@vant/weapp/dist/tag/index",
+    "van-search": "/@vant/weapp/dist/search/index",
+    "van-button": "/@vant/weapp/dist/button/index",
+    "van-popup": "/@vant/weapp/dist/popup/index",
+    "van-toast": "/@vant/weapp/dist/toast/index",
+    "van-goods-action": "/@vant/weapp/dist/goods-action/index",
+    "van-goods-action-icon": "/@vant/weapp/dist/goods-action-icon/index",
+    "van-goods-action-button": "/@vant/weapp/dist/goods-action-button/index",
+    "van-sidebar": "/@vant/weapp/dist/sidebar/index",
+    "van-sidebar-item": "/@vant/weapp/dist/sidebar-item/index",
+    "van-card": "/@vant/weapp/dist/card/index",
+    "van-submit-bar": "/@vant/weapp/dist/submit-bar/index",
+    "van-checkbox": "/@vant/weapp/dist/checkbox/index",
+    "van-stepper": "/@vant/weapp/dist/stepper/index",
+    "van-tab": "/@vant/weapp/dist/tab/index",
+    "van-tabs": "/@vant/weapp/dist/tabs/index",
+    "van-field": "/@vant/weapp/dist/field/index",
+    "van-area": "/@vant/weapp/dist/area/index",
+    "van-panel": "/@vant/weapp/dist/panel/index"
+  },
+  "subPackages": [
+    {
+      "root": "packageA",
+      "name": "packageA",
+      "independent": false,
+      "pages": [
+        "logs"
+      ]
+    }
+  ]
+}

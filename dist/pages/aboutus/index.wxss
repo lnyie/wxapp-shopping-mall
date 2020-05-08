@@ -1,0 +1,8 @@
+@import "../../common/vendor.wxss";
+
+.aboutus.data-v-4edb9d37 {
+  padding: 20rpx;
+  color: #969799;
+  font-size: 26rpx;
+  text-align: center;
+}

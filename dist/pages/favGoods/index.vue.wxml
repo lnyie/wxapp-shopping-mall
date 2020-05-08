@@ -1,0 +1,7 @@
+<template name="13c67e15">
+  <view class="_div data-v-9e8e00f6 favGoods">
+    <navigator url="{{'/pages/detail/index?id=' + item.goodsId}}" wx:key="index" key="{{index}}" wx:for="{{favGoodsList}}" wx:for-index="index" wx:for-item="item" class="_a data-v-9e8e00f6">
+      <van-card title="{{item.goodsName}}" thumb="{{item.pic}}" class="_van-card data-v-9e8e00f6"></van-card>
+    </navigator>
+  </view>
+</template>

@@ -1,0 +1,17 @@
+<import src="/components/card.vue.wxml" /><template name="6281c0c4">
+  <view class="_div data-v-633f7f4a container" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-633f7f4a userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <image class="_img data-v-633f7f4a userinfo-avatar" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="_div data-v-633f7f4a userinfo-nickname"><template data="{{...$root[$kk+'0'], $root}}" is="50f464fa"></template></view>
+    </view>
+    <van-tag class="_van-tag data-v-633f7f4a">标签</van-tag>
+    <van-tag type="danger" class="_van-tag data-v-633f7f4a">标签</van-tag>
+    <van-tag type="primary" class="_van-tag data-v-633f7f4a">标签</van-tag>
+    <van-tag type="success" class="_van-tag data-v-633f7f4a">标签</van-tag>
+    <view class="_div data-v-633f7f4a usermotto">
+      <view class="_div data-v-633f7f4a user-motto"><template data="{{...$root[$kk+'5'], $root}}" is="50f464fa"></template></view>
+    </view>
+    <form class="_form data-v-633f7f4a form-container"><input type="text" class="_input data-v-633f7f4a form-control" value="{{motto}}" bindinput="handleProxy" placeholder="v-model" data-eventid="{{'1'}}" data-comkey="{{$k}}" /> <input type="text" class="_input data-v-633f7f4a form-control" value="{{motto}}" bindblur="handleProxy" placeholder="v-model.lazy" data-eventid="{{'2'}}" data-comkey="{{$k}}" /></form>
+    <navigator url="/pages/counter" class="_a data-v-633f7f4a counter">去往Vuex示例页面</navigator>
+  </view>
+</template>

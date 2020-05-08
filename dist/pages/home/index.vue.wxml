@@ -1,0 +1,48 @@
+<template name="e30cd20e">
+  <view class="_div data-v-182781e9 home">
+    <van-search input-align="center" placeholder="请输入搜索关键词" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-search data-v-182781e9"></van-search>
+    <view class="_div data-v-182781e9">
+      <swiper class="_swiper data-v-182781e9 swiperBox" indicator-dots autoplay circular>
+        <block wx:key="index" key="{{index}}" wx:for="{{swiperImgList}}" wx:for-index="index" wx:for-item="item">
+          <swiper-item class="_swiper-item data-v-182781e9 imgbox">
+            <view url class="_a data-v-182781e9">
+              <image src="{{item.picUrl}}" class="_img data-v-182781e9"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="_div data-v-182781e9 nav-floor">
+      <view class="_ul data-v-182781e9">
+        <view wx:key="item.id" key="{{item.id}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{navImgList}}" wx:for-index="index" wx:for-item="item" class="_li data-v-182781e9">
+          <image src="{{item.icon}}" class="_img data-v-182781e9"></image> <label class="_span data-v-182781e9">{{ item.name }}</label>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-182781e9 fashion-girl-floor floor">
+      <view class="_div data-v-182781e9 floor-title">
+        <view class="_i data-v-182781e9 title">时尚女装</view>
+      </view>
+      <view wx:key="item.id" key="{{item.id}}" class="_div data-v-182781e9 fashion-girl-content" bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" wx:for="{{fashionGirlList}}" wx:for-index="index" wx:for-item="item">
+        <image src="{{item.icon}}" class="_img data-v-182781e9"></image>
+        <view class="_p data-v-182781e9">{{ item.name }}</view>
+      </view>
+    </view>
+    <view class="_div data-v-182781e9 recommended-goods-floor floor">
+      <view class="_div data-v-182781e9 floor-title">
+        <view class="_i data-v-182781e9 title">推荐商品</view>
+      </view>
+      <view class="_div data-v-182781e9 recommended-goods-content">
+        <navigator wx:key="item.id" key="{{item.id}}" url="{{'/pages/detail/index?id=' + item.id}}" class="_a data-v-182781e9 goodsbox" wx:for="{{recommendedGoodsList}}" wx:for-index="index" wx:for-item="item">
+          <image lazy-load src="{{item.pic}}" class="_image data-v-182781e9 goodsImg"></image>
+          <view class="_div data-v-182781e9 goodsinfo">
+            <view class="_p data-v-182781e9">{{ item.name }}</view>
+            <view class="_i data-v-182781e9 dis_price">¥{{ item.minPrice }}</view>
+            <view class="_i data-v-182781e9 old_price">¥{{ item.originalPrice }}</view>
+            <view class="_i data-v-182781e9 salecount">销量{{ item.numberSells }}件</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</template>

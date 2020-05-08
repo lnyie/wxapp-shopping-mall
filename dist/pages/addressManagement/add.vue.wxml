@@ -1,0 +1,14 @@
+<template name="1bd51f30">
+  <view class="_div data-v-164a93f2 add">
+    <van-cell-group class="_van-cell-group data-v-164a93f2">
+      <van-field value="{{nickName}}" bindinput="handleProxy" required clearable label="收货人姓名" placeholder="请输入收货人姓名" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-field data-v-164a93f2"></van-field>
+      <van-field clearable value="{{phoneNum}}" bindinput="handleProxy" label="联系电话" placeholder="请输入联系电话" required border="{{true}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_van-field data-v-164a93f2"></van-field>
+      <van-field readonly clearable value="{{areaStr}}" label="所在地区" placeholder="北京市-北京市-东城区" required border="{{true}}" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_van-field data-v-164a93f2"></van-field>
+      <van-field clearable value="{{detailAddress}}" bindinput="handleProxy" label="详细地址" placeholder="请输入详细地址" required border="{{true}}" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_van-field data-v-164a93f2"></van-field>
+    </van-cell-group>
+    <van-popup show="{{isShow}}" position="bottom" custom-style="height: 30%;" bindclose="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_van-popup data-v-164a93f2">
+      <van-area area-list="{{areaList}}" value="110101" bindconfirm="handleProxy" bindcancel="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_van-area data-v-164a93f2"></van-area>
+    </van-popup>
+    <van-button block type="primary" size="small" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_van-button data-v-164a93f2">完成</van-button>
+  </view>
+</template>

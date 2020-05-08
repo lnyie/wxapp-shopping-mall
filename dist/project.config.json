@@ -1,0 +1,164 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.11.0",
+	"appid": "wx48f426aa5c611009",
+	"projectname": "wxapp-shopping-mall",
+	"cloudfunctionTemplateRoot": "",
+	"watchOptions": {
+		"ignore": []
+	},
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/car/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/login/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/personal/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "商品详情",
+					"pathName": "pages/detail/index",
+					"query": "id=396444",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/category/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/search/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "pages/searchList/index",
+					"pathName": "pages/searchList/index",
+					"query": "categoryId=122232&categoryName=牛仔裤",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/order/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "新人专区",
+					"pathName": "pages/newcomerZone/index",
+					"query": "navName=新人专区",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "收藏店铺",
+					"pathName": "pages/favGoods/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "aboutus",
+					"pathName": "pages/aboutus/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "反馈",
+					"pathName": "pages/feedback/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "收货管理",
+					"pathName": "pages/addressManagement/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加地址",
+					"pathName": "pages/addressManagement/add",
+					"scene": null
+				}
+			]
+		}
+	}
+}

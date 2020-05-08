@@ -1,0 +1,2 @@
+<template name="5754701f">
+  <view class="_div data-v-17721ce2 feedback"><textarea id="fullArea" rows="10" auto-focus value="{{feedbackVal}}" bindinput="handleProxy" placeholder="欢迎提交反馈内容" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_textarea data-v-17721ce2" /> <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)" size="small" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_van-button data-v-17721ce2">提交反馈</van-button> <van-toast id="van-toast" class="_van-toast data-v-17721ce2"></van-toast></view></template>

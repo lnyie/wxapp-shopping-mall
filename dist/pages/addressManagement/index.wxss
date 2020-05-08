@@ -1,0 +1,16 @@
+@import "../../common/vendor.wxss";
+
+.addressManagement .addressBox.data-v-86894d3a {
+  display: block;
+  margin-bottom: 40rpx;
+}
+.addressManagement .addressBox .address.data-v-86894d3a {
+  font-size: 24rpx;
+  color: #969799;
+  text-indent: 30rpx;
+}
+.addressManagement .bottomArea.data-v-86894d3a {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

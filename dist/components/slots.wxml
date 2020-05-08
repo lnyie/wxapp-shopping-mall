@@ -1,0 +1,2 @@
+<import src="/components/card.vue.wxml" />
+<import src="/pages/login/index.vue.wxml" />
